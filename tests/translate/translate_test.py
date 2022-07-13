@@ -121,9 +121,11 @@ class TestTranslate:
             screen_keyboard = translate_page.screen_keyboard
             try:
                 screen_keyboard.find_element(By.XPATH, f'//button/span[text()="{char}"]').click()
+                logging.info(f'Clicking "{char}" key.')
             except NoSuchElementException:
                 translate_page.toggle_screen_keyboard_left_shift_key()
                 screen_keyboard.find_element(By.XPATH, f'//button/span[text()="{char}"]').click()
+                logging.info(f'Clicking "{char}" key.')
 
         translate_page.close_screen_keyboard()
 

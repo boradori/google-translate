@@ -866,3 +866,13 @@ DevTools listening on ws://localhost:40236/devtools/browser/8a9b4884-2acd-4900-9
 JavaScript error: , line 0: uncaught exception: Object
 JavaScript error: , line 0: uncaught exception: Object
 1657700855227	Marionette	INFO	Stopped listening on port 40243
+1657706086802	geckodriver	INFO	Listening on 127.0.0.1:42604
+1657706089891	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "42605" "-no-remote" "-profile" "C:\\Users\\young\\AppData\\Local\\Temp\\rust_mozprofileTMJaND"
+1657706090630	Marionette	INFO	Marionette enabled
+1657706090639	Marionette	INFO	Listening on port 42611
+WebDriver BiDi listening on ws://localhost:42605
+1657706091034	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\young\\AppData\\Local\\Temp\\rust_mozprofileTMJaND\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42605/devtools/browser/2506da72-4335-4dc2-a41b-a585b97790a7
+JavaScript error: , line 0: uncaught exception: Object
+1657706101418	Marionette	INFO	Stopped listening on port 42611
