@@ -7,6 +7,7 @@ from selenium import webdriver
 def get_driver(desired_browser):
     if desired_browser == 'chrome':
         options = webdriver.ChromeOptions()
+        # options.binary_location = "/Applications/Google Chrome Beta.app/Contents/MacOS/Google Chrome Beta"
         options.add_argument('--log-level=3')
         options.headless = False
         driver = webdriver.Chrome(options=options)

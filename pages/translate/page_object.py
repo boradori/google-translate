@@ -8,11 +8,11 @@ from pages.base_page import BasePage
 class TranslatePage(BasePage):
     @property
     def more_source_languages_btn(self):
-        return self._find_visible_element(locators.MORE_SOURCE_LANGUAGES)
+        return self._find_clickable_element(locators.MORE_SOURCE_LANGUAGES)
 
     @property
     def more_target_languages_btn(self):
-        return self._find_visible_element(locators.MORE_TARGET_LANGUAGES)
+        return self._find_clickable_element(locators.MORE_TARGET_LANGUAGES)
 
     @property
     def screen_keyboard(self):
@@ -63,6 +63,7 @@ class TranslatePage(BasePage):
     def select_source_language_by_language_name(self, language_name):
         logging.info(f'Selecting source language, "{language_name}".')
         self._click(locators.select_source_language_by_language_name(language_name))
+        self._pause_for_animation()
 
     def select_target_language_by_language_name(self, language_name):
         logging.info(f'Selecting target language, "{language_name}".')
@@ -82,6 +83,7 @@ class TranslatePage(BasePage):
             self.more_source_languages_btn.click()
         elif source_or_target == 'target':
             self.more_target_languages_btn.click()
+            self._pause_for_animation()
 
     def toggle_screen_keyboard_left_shift_key(self):
         logging.info('Toggling the left "Shift" key on the screen keyboard.')
