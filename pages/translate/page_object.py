@@ -62,8 +62,8 @@ class TranslatePage(BasePage):
 
     def select_source_language_by_language_name(self, language_name):
         logging.info(f'Selecting source language, "{language_name}".')
+        self._move_to_element(locator=locators.select_source_language_by_language_name(language_name))
         self._click(locators.select_source_language_by_language_name(language_name))
-        self._pause_for_animation()
 
     def select_target_language_by_language_name(self, language_name):
         logging.info(f'Selecting target language, "{language_name}".')
@@ -80,8 +80,10 @@ class TranslatePage(BasePage):
     def toggle_more_languages(self, source_or_target):
         logging.info(f'Toggling "More {source_or_target} languages".')
         if source_or_target == 'source':
+            self._move_to_element(element=self.more_source_languages_btn)
             self.more_source_languages_btn.click()
         elif source_or_target == 'target':
+            self._move_to_element(element=self.more_target_languages_btn)
             self.more_target_languages_btn.click()
             self._pause_for_animation()
 

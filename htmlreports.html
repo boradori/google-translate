@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>htmlreports.html</h1>
-    <p>Report generated on 13-Jul-2022 at 02:55:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 25-Jul-2022 at 17:36:06 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -251,15 +251,15 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.1.2"}</td></tr>
       <tr>
         <td>Platform</td>
-        <td>Windows-10-10.0.22000-SP0</td></tr>
+        <td>macOS-12.4-arm64-arm-64bit</td></tr>
       <tr>
         <td>Plugins</td>
         <td>{"html": "3.1.1", "metadata": "2.0.1", "order": "1.0.1"}</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.10.1</td></tr></table>
+        <td>3.9.13</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 16.12 seconds. </p>
+    <p>3 tests ran in 10.00 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,29 +275,30 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/translate/translate_test.py::TestTranslate::test_user_can_translate_german_to_spanish</td>
-          <td class="col-duration">10.75</td>
+          <td class="col-duration">6.02</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:page_object.py:60 Navigating to &quot;Google Translate&quot; page.<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:page_object.py:80 Toggling &quot;More source languages&quot;.
-INFO     root:page_object.py:99 Waiting for &quot;More source languages&quot; dropdown to appear.
+            <div class="log"> -------------------------------Captured log setup------------------------------- <br/>INFO     root:page_object.py:60 Navigating to &quot;Google Translate&quot; page.<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:page_object.py:81 Toggling &quot;More source languages&quot;.
+INFO     root:page_object.py:103 Waiting for &quot;More source languages&quot; dropdown to appear.
 INFO     root:page_object.py:64 Selecting source language, &quot;German&quot;.
 INFO     root:translate_test.py:32 Verifying that the selected source language is &quot;German&quot;.
 INFO     root:translate_test.py:35 Expected result: GERMAN
 INFO     root:translate_test.py:36 Actual result:   GERMAN
-INFO     root:page_object.py:80 Toggling &quot;More target languages&quot;.
-INFO     root:page_object.py:99 Waiting for &quot;More target languages&quot; dropdown to appear.
-INFO     root:page_object.py:68 Selecting target language, &quot;Spanish&quot;.
+INFO     root:page_object.py:81 Toggling &quot;More target languages&quot;.
+INFO     root:base_page.py:150 Pausing for animation for 1 second.
+INFO     root:page_object.py:103 Waiting for &quot;More target languages&quot; dropdown to appear.
+INFO     root:page_object.py:69 Selecting target language, &quot;Spanish&quot;.
 INFO     root:translate_test.py:43 Verifying that the selected target language is &quot;Spanish&quot;.
 INFO     root:translate_test.py:46 Expected result: SPANISH
 INFO     root:translate_test.py:47 Actual result:   SPANISH
 INFO     root:page_object.py:55 Entering source text: &quot;Demokratien&quot;.
-INFO     root:page_object.py:113 Translating...
+INFO     root:page_object.py:117 Translating...
 INFO     root:translate_test.py:52 Verifying that the source field contains &quot;Demokratien&quot;.
 INFO     root:translate_test.py:55 Expected result: Demokratien
 INFO     root:translate_test.py:56 Actual result:   Demokratien
-INFO     root:page_object.py:95 Toggling &quot;Target text&quot; dropdown.
-INFO     root:page_object.py:72 Selecting target text of &quot;Democracias&quot; and source text of &quot;Demokratien&quot;.
+INFO     root:page_object.py:99 Toggling &quot;Target text&quot; dropdown.
+INFO     root:page_object.py:73 Selecting target text of &quot;Democracias&quot; and source text of &quot;Demokratien&quot;.
 INFO     root:translate_test.py:62 Verifying that translation from &quot;German&quot; to &quot;Spanish&quot; is successful.
 INFO     root:translate_test.py:66 Expected result: Democracias
 INFO     root:translate_test.py:67 Actual result:   Democracias<br/></div></td></tr></tbody>
@@ -305,7 +306,7 @@ INFO     root:translate_test.py:67 Actual result:   Democracias<br/></div></td><
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/translate/translate_test.py::TestTranslate::test_user_can_swap_languages</td>
-          <td class="col-duration">1.45</td>
+          <td class="col-duration">1.32</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -327,17 +328,17 @@ INFO     root:translate_test.py:109 Actual result:   Demokratien<br/></div></td>
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/translate/translate_test.py::TestTranslate::test_user_can_clear_input_and_use_screen_keyboard_to_enter_source_text</td>
-          <td class="col-duration">3.83</td>
+          <td class="col-duration">2.62</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     root:page_object.py:38 Clearing &quot;Source text&quot; field.
-INFO     root:page_object.py:91 Toggling &quot;Select input tool&quot; dropdown.
-INFO     root:page_object.py:76 Selecting &quot;US International&quot; screen keyboard.
-INFO     root:page_object.py:87 Toggling the left &quot;Shift&quot; key on the screen keyboard.
+INFO     root:page_object.py:95 Toggling &quot;Select input tool&quot; dropdown.
+INFO     root:page_object.py:77 Selecting &quot;US International&quot; screen keyboard.
+INFO     root:page_object.py:91 Toggling the left &quot;Shift&quot; key on the screen keyboard.
 INFO     root:translate_test.py:128 Clicking &quot;H&quot; key.
 INFO     root:translate_test.py:124 Clicking &quot;i&quot; key.
-INFO     root:page_object.py:87 Toggling the left &quot;Shift&quot; key on the screen keyboard.
+INFO     root:page_object.py:91 Toggling the left &quot;Shift&quot; key on the screen keyboard.
 INFO     root:translate_test.py:128 Clicking &quot;!&quot; key.
 INFO     root:page_object.py:51 Closing &quot;Screen keyboard&quot;.
 INFO     root:translate_test.py:132 Verifying tht &quot;Hi!&quot; is displayed in both source field and target field.
